@@ -1,1 +1,18 @@
-console.log('%cHello from Fibonacci here', 'color: green')
+function naive(n) {
+  checkInput(n)
+  return n < 2 ? n : naive(n - 1) + naive(n - 2)
+}
+
+function checkInput(n) {
+  if (n == null) {
+    throw new Error('`n` is not defined')
+  }
+  if (typeof n !== 'number') {
+    throw new Error(`${n} is not a number`)
+  }
+  if (n < 0) {
+    throw new Error('Does not support negative fibonacci numbers.')
+  }
+}
+
+export { naive }
