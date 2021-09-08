@@ -1,6 +1,13 @@
 const context = {
-  entrypoint: 'fibonacci',
+  entrypoint: 'board',
   available: [
+    {
+      id: 'board',
+      program: {
+        url: 'modules/board/build/main.min.js',
+      },
+      meta: {},
+    },
     {
       id: 'fibonacci',
       program: {
