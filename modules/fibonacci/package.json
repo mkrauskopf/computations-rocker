@@ -6,14 +6,14 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@lastui/dependencies": "1.1.42",
-    "@lastui/rocker": "0.5.5"
+    "@lastui/dependencies": "1.1.61",
+    "@lastui/rocker": "0.6.23"
   },
   "devDependencies": {
-    "@babel/core": "7.15.5",
-    "@babel/preset-env": "7.15.4",
-    "babel-jest": "27.1.1",
-    "jest": "27.1.1"
+    "@babel/core": "7.16.12",
+    "@babel/preset-env": "7.16.11",
+    "babel-jest": "27.4.6",
+    "jest": "27.4.7"
   },
   "author": "martin.krauskopf@gmail.com"
 }

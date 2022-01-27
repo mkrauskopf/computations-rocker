@@ -2,10 +2,10 @@
   "name": "computation-server",
   "main": "src/server.js",
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.2"
   },
   "devDependencies": {
-    "nodemon": "2.0.12"
+    "nodemon": "2.0.15"
   },
   "scripts": {
     "start": "nodemon ."
