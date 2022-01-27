@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# A simple script for reinstalling UI deps (both, in-docker, and locally) and running tests,
+# thus preparing TS config for IDEs. Use if you want, don't if you don't want. 🙂
+
+root_dir=`realpath "$(dirname "$0")"/..`
+
+# Nice! 🌈
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+flushModuleNpm() {
+  echo "${BLUE}Flushing NPMs for module: $1${NC}"
+  cd "$root_dir/$1"
+  rm -rf node_modules package-lock.json
+
+  npm install --loglevel=warn --progress
+}
+
+modules=(
+  'modules/fibonacci'
+  'modules/board'
+  'spa'
+  'server'
+)
+
+set -euo pipefail
+
+for i in "${modules[@]}"; do flushModuleNpm $i;  done

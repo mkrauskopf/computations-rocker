@@ -1,0 +1,16 @@
+#!/bin/sh
+
+root_dir=`realpath "$(dirname "$0")"/..`
+
+modules=(
+  'modules/fibonacci'
+  'modules/board'
+  'spa'
+  'server'
+)
+
+set -euxo pipefail
+
+cd $root_dir
+
+for i in "${modules[@]}"; do npx npm-check-updates --cwd $i "$@";  done

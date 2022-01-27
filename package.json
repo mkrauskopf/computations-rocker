@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "build": "npm run build:modules && npm run build:spa",
-    "build:spa": "npm run -C spa build",
-    "build:modules": "ls -1 modules | xargs -I{} npm run -C modules/{} build",
+    "build": "./dev-tools/ui-build",
     "server": "npm run -C server start"
   }
 }
