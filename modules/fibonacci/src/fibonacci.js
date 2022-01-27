@@ -5,7 +5,7 @@ function naive(n) {
 
 function checkInput(n) {
   if (n == null) {
-    throw new Error('`n` is not defined')
+    throw new Error(`'n' is not defined: ${n}`)
   }
   if (typeof n !== 'number') {
     throw new Error(`${n} is not a number`)

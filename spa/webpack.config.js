@@ -1,11 +1,11 @@
-const path = require('path');
+const path = require('path')
 
-const settings = require('./node_modules/@lastui/rocker/webpack/settings');
+const settings = require('./node_modules/@lastui/rocker/webpack/settings')
 
-const rockerWebpackConfig = require(path.resolve(settings.WEBPACK_ROOT_PATH, 'config/spa.js'));
+const rockerWebpackConfig = require(path.resolve(settings.WEBPACK_ROOT_PATH, 'config/spa.js'))
 
 rockerWebpackConfig.entry = {
-	computations: ['./src/computations.js'],
+  computations: ['./src/Computations.js'],
 }
 
-module.exports = rockerWebpackConfig;
+module.exports = rockerWebpackConfig
