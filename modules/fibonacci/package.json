@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@lastui/dependencies": "1.1.61",
-    "@lastui/rocker": "0.6.23"
+    "@lastui/rocker": "0.6.26"
   },
   "devDependencies": {
     "@babel/core": "7.16.12",
