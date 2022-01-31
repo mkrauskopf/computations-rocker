@@ -3,8 +3,11 @@ import * as S from './styled'
 
 const Layout = () => (
   <S.Layout>
-    Computations SPA, I'm.
-    <Module name='board' />
+    <S.Modules>
+      <div>Computations SPA, I'm.</div>
+      <Module name='board' />
+      <Module name='legend' />
+    </S.Modules>
   </S.Layout>
 )
 

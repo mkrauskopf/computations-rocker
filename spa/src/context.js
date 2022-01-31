@@ -24,6 +24,13 @@ const context = {
       },
       meta: {},
     },
+    {
+      id: 'legend',
+      program: {
+        url: moduleUrl('legend'),
+      },
+      meta: {},
+    },
   ],
 }
 
