@@ -2,10 +2,10 @@ const path = require('path')
 
 const settings = require('./node_modules/@lastui/rocker/webpack/settings')
 
-const rockerWebpackConfig = require(path.resolve(settings.WEBPACK_ROOT_PATH, 'config/spa.js'))
+const rockerWebpackConfig = require(path.resolve(settings.WEBPACK_ROOT_PATH, 'config/module.js'))
 
 rockerWebpackConfig.entry = {
-  main: ['./src/spa.js'],
+  main: ['./src/rocker-module.js'],
 }
 
 module.exports = rockerWebpackConfig

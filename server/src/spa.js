@@ -19,6 +19,7 @@ router.get('/', spaFile('index.html'))
 router.get('/dependencies.dll.min.js', spaFile('dependencies.dll.min.js'))
 router.get('/platform.dll.min.js', spaFile('platform.dll.min.js'))
 router.get('/runtime.dll.min.js', spaFile('runtime.dll.min.js'))
-router.get('/Computations.js', spaFile('Computations.js'))
+router.get('/main.js', spaFile('main.js'))
+router.get('/styles.css', spaFile('styles.css'))
 
 module.exports = router

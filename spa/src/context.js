@@ -1,17 +1,26 @@
+const moduleUrl = (moduleId) => `modules/${moduleId}/build/main.min.js`
+
 const context = {
-  entrypoint: 'board',
+  entrypoint: 'layout',
   available: [
+    {
+      id: 'layout',
+      program: {
+        url: moduleUrl('layout'),
+      },
+      meta: {},
+    },
     {
       id: 'board',
       program: {
-        url: 'modules/board/build/main.min.js',
+        url: moduleUrl('board'),
       },
       meta: {},
     },
     {
       id: 'fibonacci',
       program: {
-        url: 'modules/fibonacci/build/main.min.js',
+        url: moduleUrl('fibonacci'),
       },
       meta: {},
     },
