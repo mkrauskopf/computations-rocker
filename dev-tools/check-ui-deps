@@ -5,6 +5,8 @@ root_dir=`realpath "$(dirname "$0")"/..`
 modules=(
   'modules/fibonacci'
   'modules/board'
+  'modules/legend'
+  'modules/layout'
   'spa'
   'server'
 )
