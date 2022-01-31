@@ -1,13 +1,9 @@
 #!/bin/sh
 
-# A simple script for reinstalling UI deps (both, in-docker, and locally) and running tests,
-# thus preparing TS config for IDEs. Use if you want, don't if you don't want. 🙂
+# A simple script for reinstalling UI deps.
 
 root_dir=`realpath "$(dirname "$0")"/..`
-
-# Nice! 🌈
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+. "$root_dir/dev-tools/base"
 
 flushModuleNpm() {
   echo "${BLUE}Flushing NPMs for module: $1${NC}"
@@ -18,11 +14,7 @@ flushModuleNpm() {
 }
 
 modules=(
-  'modules/fibonacci'
-  'modules/board'
-  'modules/legend'
-  'modules/layout'
-  'spa'
+  ${modules[@]}
   'server'
 )
 

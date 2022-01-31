@@ -1,23 +1,12 @@
 #!/bin/sh
 
 root_dir=`realpath "$(dirname "$0")"/..`
-
-# Nice! 🌈
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
+. "$root_dir/dev-tools/base"
 
 function buildModule() {
   echo "${BLUE}Building module: $1${NC}"
   npm run -C $1 build
 }
-
-modules=(
-  'modules/fibonacci'
-  'modules/board'
-  'modules/legend'
-  'modules/layout'
-  'spa'
-)
 
 set -euo pipefail
 

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Nice! 🌈
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+modules=(
+  'modules/fibonacci'
+  'modules/board'
+  'modules/legend'
+  'modules/layout'
+  'spa'
+)
