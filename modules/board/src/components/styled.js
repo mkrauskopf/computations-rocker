@@ -4,7 +4,6 @@ const Board = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: 0.6em 0 0 0;
   border: 2px solid hsl(182deg 25% 50%);
   border-radius: 4px;
   padding: 0.6em;
