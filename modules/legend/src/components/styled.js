@@ -5,10 +5,10 @@ const Legend = styled.div`
   flex-direction: column;
   gap: 0.7em;
 
-  border: 2px solid hsl(172deg 78% 72%);
+  border: 2px solid ${(props) => props.colors?.border ?? 'black'};
   border-radius: 4px;
   padding: 0.6em;
-  background-color: hsl(172deg 78% 93%);
+  background-color: ${(props) => props.colors?.background ?? 'white'};
 `
 
 const Modules = styled.div`

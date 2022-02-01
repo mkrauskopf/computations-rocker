@@ -2,10 +2,10 @@ import { styled } from '@linaria/react'
 
 const Fibonacci = styled.span`
   margin: 0.3em 0;
-  border: 2px solid hsl(219deg 79% 66%);
+  border: 2px solid ${(props) => props.colors?.border ?? 'black'};
   border-radius: 4px;
   padding: 0.15em 0.3em;
-  background-color: hsl(219deg 79% 81%);
+  background-color: ${(props) => props.colors?.background ?? 'white'};
 `
 
 const Number = styled.span``

@@ -2,10 +2,10 @@ import { styled } from '@linaria/react'
 
 const Layout = styled.div`
   margin: 0.6em 0 0 0;
-  border: 2px solid hsl(39deg 100% 50%);
+  border: 2px solid ${(props) => props.colors?.border ?? 'black'};
   border-radius: 4px;
   padding: 0.8em;
-  background-color: hsl(39deg 100% 87%);
+  background-color: ${(props) => props.colors?.background ?? 'white'};
 `
 
 const Modules = styled.div`

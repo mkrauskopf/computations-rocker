@@ -1,24 +1,31 @@
 import * as S from './styled'
+import { useDispatch } from 'react-redux'
+import { useEffect } from 'react'
 
-const modulesColors = [
-  { id: 'layout', color: 'hsl(39deg 100% 87%)', border: 'hsl(39deg 100% 50%)' },
-  { id: 'board', color: 'hsl(182deg 25% 85%)', border: 'hsl(182deg 25% 50%)' },
-  { id: 'fibonacci', color: 'hsl(219deg 79% 81%)', border: 'hsl(219deg 79% 66%)' },
-  { id: 'legend', color: 'hsl(172deg 78% 93%)', border: 'hsl(172deg 78% 72%)' },
-]
+const modulesColors = {
+  layout: { background: 'hsl(39deg 100% 87%)', border: 'hsl(39deg 100% 50%)' },
+  board: { background: 'hsl(182deg 25% 85%)', border: 'hsl(182deg 25% 50%)' },
+  fibonacci: { background: 'hsl(219deg 79% 81%)', border: 'hsl(219deg 79% 66%)' },
+  legend: { background: 'hsl(172deg 78% 93%)', border: 'hsl(172deg 78% 72%)' },
+}
 
 const Legend = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch({ type: 'MODULE_COLORS', payload: modulesColors })
+  }, [dispatch])
+
   return (
-    <S.Legend>
+    <S.Legend colors={modulesColors['legend']}>
       <div>Modules color coding</div>
       <S.Modules>
-        {modulesColors.map((moduleColor) => (
+        {Object.entries(modulesColors).map(([moduleId, colors]) => (
           <div
-            key={moduleColor.id}
+            key={moduleId}
             className='colorBox'
-            style={{ backgroundColor: moduleColor.color, border: `2px solid ${moduleColor.border}` }}
+            style={{ backgroundColor: colors.background, border: `2px solid ${colors.border}` }}
           >
-            {moduleColor.id}
+            {moduleId}
           </div>
         ))}
       </S.Modules>

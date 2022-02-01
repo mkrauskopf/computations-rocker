@@ -4,10 +4,10 @@ const Board = styled.div`
   display: flex;
   flex-direction: column;
 
-  border: 2px solid hsl(182deg 25% 50%);
+  border: 2px solid ${(props) => props.colors?.border ?? 'black'};
   border-radius: 4px;
   padding: 0.6em;
-  background-color: hsl(182deg 25% 85%);
+  background-color: ${(props) => props.colors?.background ?? 'white'};
 
   > hr {
     border: 0;
