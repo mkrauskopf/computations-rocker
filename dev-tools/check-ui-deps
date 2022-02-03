@@ -3,16 +3,11 @@
 root_dir=`realpath "$(dirname "$0")"/..`
 . "$root_dir/dev-tools/base"
 
-modules=(
-  ${modules[@]}
-  'server'
-)
-
 set -euo pipefail
 
 cd $root_dir
 
-for i in "${modules[@]}"; do
+for i in "${all_modules[@]}"; do
   echo "${BLUE}Checking module: $i${NC}"
   npx npm-check-updates --cwd $i "$@"
 done

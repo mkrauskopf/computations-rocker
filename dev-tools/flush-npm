@@ -8,16 +8,11 @@ root_dir=`realpath "$(dirname "$0")"/..`
 flushModuleNpm() {
   echo "${BLUE}Flushing NPMs for module: $1${NC}"
   cd "$root_dir/$1"
+  
   rm -rf node_modules package-lock.json
-
   npm install --loglevel=warn --progress
 }
 
-modules=(
-  ${modules[@]}
-  'server'
-)
-
 set -euo pipefail
 
-for i in "${modules[@]}"; do flushModuleNpm $i;  done
+for i in "${all_modules[@]}"; do flushModuleNpm $i;  done

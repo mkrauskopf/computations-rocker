@@ -11,3 +11,8 @@ modules=(
   'modules/layout'
   'spa'
 )
+
+all_modules=(
+  ${modules[@]}
+  'server'
+)

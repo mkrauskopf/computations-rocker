@@ -1,6 +1,6 @@
-import Fibonacci from './components/Fibonacci'
-
 import { registerModule } from '@lastui/rocker/platform'
+
+import Fibonacci from './components/Fibonacci'
 
 registerModule({
   Main: Fibonacci,

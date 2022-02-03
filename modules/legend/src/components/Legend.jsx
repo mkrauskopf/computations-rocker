@@ -1,6 +1,7 @@
-import * as S from './styled'
-import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+
+import * as S from './styled'
 
 const modulesColors = {
   layout: { background: 'hsl(39deg 100% 87%)', border: 'hsl(39deg 100% 50%)' },

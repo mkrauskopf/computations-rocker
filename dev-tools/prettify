@@ -1,0 +1,18 @@
+#!/bin/sh
+
+root_dir=`realpath "$(dirname "$0")"/..`
+. "$root_dir/dev-tools/base"
+
+node_bin='./node_modules/.bin'
+
+prettifyModule() {
+  echo "${BLUE}Running prettier for module: $1${NC}"
+  cd "$root_dir/$1"
+  
+  $node_bin/prettier -w src
+  $node_bin/prettier-package-json --write ./package.json
+}
+
+set -euo pipefail
+
+for i in "${all_modules[@]}"; do prettifyModule $i;  done

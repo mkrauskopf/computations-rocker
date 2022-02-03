@@ -1,5 +1,6 @@
 import { Module } from '@lastui/rocker/platform'
 import { useSelector } from 'react-redux'
+
 import * as S from './styled'
 
 const moduleId = 'layout'

@@ -1,5 +1,6 @@
-import { naive } from '../fibonacci'
 import { useSelector } from 'react-redux'
+
+import { naive } from '../fibonacci'
 import * as S from './styled'
 
 const moduleId = 'fibonacci'
