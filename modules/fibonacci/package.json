@@ -7,13 +7,17 @@
   },
   "dependencies": {
     "@lastui/dependencies": "1.1.61",
-    "@lastui/rocker": "0.6.26"
+    "@lastui/rocker": "0.7.1"
   },
   "devDependencies": {
-    "@babel/core": "7.16.12",
+    "@babel/core": "7.17.0",
     "@babel/preset-env": "7.16.11",
     "babel-jest": "27.4.6",
     "jest": "27.4.7"
   },
-  "author": "martin.krauskopf@gmail.com"
+  "author": "martin.krauskopf@gmail.com",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  }
 }

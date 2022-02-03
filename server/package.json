@@ -10,5 +10,9 @@
   "scripts": {
     "start": "nodemon ."
   },
-  "author": "martin.krauskopf@gmail.com"
+  "author": "martin.krauskopf@gmail.com",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  }
 }
