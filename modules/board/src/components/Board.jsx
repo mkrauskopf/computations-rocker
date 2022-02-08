@@ -1,8 +1,8 @@
 import { Link, Route, useLocation } from '@lastui/rocker/platform'
+import { Module } from '@lastui/rocker/platform'
 import { useSelector } from 'react-redux'
 
 import Fibonacci from './Fibonacci'
-import Primes from './Primes'
 import * as S from './styled'
 
 const moduleId = 'board'
@@ -29,7 +29,7 @@ const Board = () => {
       <div className='board'>
         <Route exact path='/' component={Fibonacci} />
         <Route path='/fibonacci' component={Fibonacci} />
-        <Route path='/primes' component={Primes} />
+        <Route path='/primes' component={() => <Module name='primes' />} />
       </div>
     </S.Board>
   )

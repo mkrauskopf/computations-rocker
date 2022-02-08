@@ -6,6 +6,7 @@ NC='\033[0m' # No Color
 
 modules=(
   'modules/fibonacci'
+  'modules/primes'
   'modules/board'
   'modules/legend'
   'modules/layout'

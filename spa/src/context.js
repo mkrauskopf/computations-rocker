@@ -25,6 +25,13 @@ const context = {
       meta: {},
     },
     {
+      id: 'primes',
+      program: {
+        url: moduleUrl('primes'),
+      },
+      meta: {},
+    },
+    {
       id: 'legend',
       program: {
         url: moduleUrl('legend'),

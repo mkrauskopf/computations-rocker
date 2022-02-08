@@ -1,0 +1,27 @@
+{
+  "author": "martin.krauskopf@gmail.com",
+  "scripts": {
+    "build": "NODE_ENV=production node ./node_modules/@lastui/rocker/bin/webpack.js",
+    "start": "NODE_ENV=development node ./node_modules/@lastui/rocker/bin/webpack.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@lastui/dependencies": "1.1.61",
+    "@lastui/rocker": "0.7.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.0",
+    "@babel/preset-env": "7.16.11",
+    "babel-jest": "27.4.6",
+    "import-sort-style-module": "6.0.0",
+    "jest": "27.4.7",
+    "prettier": "2.5.1",
+    "prettier-package-json": "2.6.0",
+    "prettier-plugin-import-sort": "0.0.7"
+  },
+  "engines": {
+    "node": "16.13.2",
+    "npm": "8.1.2"
+  }
+}

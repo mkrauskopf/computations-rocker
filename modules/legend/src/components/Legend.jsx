@@ -7,6 +7,7 @@ const modulesColors = {
   layout: { background: 'hsl(39deg 100% 87%)', border: 'hsl(39deg 100% 50%)' },
   board: { background: 'hsl(182deg 25% 85%)', border: 'hsl(182deg 25% 50%)' },
   fibonacci: { background: 'hsl(219deg 79% 81%)', border: 'hsl(219deg 79% 66%)' },
+  primes: { background: 'hsl(161deg 79% 81%)', border: 'hsl(161deg 79% 66%)' },
   legend: { background: 'hsl(172deg 78% 93%)', border: 'hsl(172deg 78% 72%)' },
 }
 
