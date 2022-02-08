@@ -25,6 +25,23 @@ const Board = styled.div`
     opacity: 0.6;
   }
 
+  .tabs {
+    display: flex;
+    padding: 0.3em 0.2em;
+    gap: 1em;
+
+    > a {
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.6);
+      text-decoration: none;
+    }
+
+    .active {
+      border-bottom: 2px #1976d2 solid;
+      color: #1976d2;
+    }
+  }
+
   .board {
     padding: 0.3em 0;
 
