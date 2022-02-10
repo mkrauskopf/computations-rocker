@@ -7,15 +7,15 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@lastui/dependencies": "1.1.61",
-    "@lastui/rocker": "0.7.1"
+    "@lastui/dependencies": "1.1.62",
+    "@lastui/rocker": "0.7.19"
   },
   "devDependencies": {
-    "@babel/core": "7.17.0",
+    "@babel/core": "7.17.2",
     "@babel/preset-env": "7.16.11",
-    "babel-jest": "27.4.6",
+    "babel-jest": "27.5.1",
     "import-sort-style-module": "6.0.0",
-    "jest": "27.4.7",
+    "jest": "27.5.1",
     "prettier": "2.5.1",
     "prettier-package-json": "2.6.0",
     "prettier-plugin-import-sort": "0.0.7"
