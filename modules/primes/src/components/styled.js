@@ -28,4 +28,10 @@ const Primes = styled.span`
   }
 `
 
-export { Primes }
+const Eratosthenes = styled.div`
+  > button {
+    margin-top: 0.6em;
+  }
+`
+
+export { Primes, Eratosthenes }
