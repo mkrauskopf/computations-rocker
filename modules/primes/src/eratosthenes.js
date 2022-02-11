@@ -1,4 +1,4 @@
-// Naive implementation with an upper limit. Not a pure generator.
+// Naive bounded implementation with an upper limit. Not a pure generator.
 function* boundedGenerator(target) {
   const sieve = Array(target).fill(true)
 
