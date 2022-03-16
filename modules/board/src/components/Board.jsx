@@ -1,5 +1,4 @@
-import { Link, Route, useLocation } from '@lastui/rocker/platform'
-import { Module } from '@lastui/rocker/platform'
+import { Link, Module, Route, useLocation } from '@lastui/rocker/platform'
 import { useSelector } from 'react-redux'
 
 import Fibonacci from './Fibonacci'

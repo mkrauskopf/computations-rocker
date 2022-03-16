@@ -4,7 +4,7 @@ const fs = require('fs')
 
 const router = express.Router()
 
-const spaFile = (spaFileName) => file(path.join(__dirname, `../../spa/build/${spaFileName}`))
+const spaFile = (spaFileName) => file(path.join(__dirname, `../../spa/build/spa/${spaFileName}`))
 
 const file = (filePath) => (req, res) => {
   if (fs.existsSync(filePath)) {
@@ -16,11 +16,10 @@ const file = (filePath) => (req, res) => {
 }
 
 router.get('/', spaFile('index.html'))
-router.get('/dependencies.dll.min.js', spaFile('dependencies.dll.min.js'))
-router.get('/platform.dll.min.js', spaFile('platform.dll.min.js'))
-router.get('/runtime.dll.min.js', spaFile('runtime.dll.min.js'))
-router.get('/main.js', spaFile('main.js'))
-router.get('/main.min.js', spaFile('main.min.js'))
+router.get('/spa/dependencies.dll.min.js', spaFile('dependencies.dll.min.js'))
+router.get('/spa/platform.dll.min.js', spaFile('platform.dll.min.js'))
+router.get('/spa/bootstrap.dll.min.js', spaFile('bootstrap.dll.min.js'))
+router.get('/spa/main.min.js', spaFile('main.min.js'))
 router.get('/styles.css', spaFile('styles.css'))
 
 module.exports = router
