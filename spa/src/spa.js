@@ -1,4 +1,4 @@
-import { Main } from '@lastui/rocker/runtime'
+import { Main } from '@lastui/rocker/bootstrap'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
