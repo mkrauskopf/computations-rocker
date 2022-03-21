@@ -1,6 +1,13 @@
 import { styled } from '@linaria/react'
 
-const Fibonacci = styled.span`
+type TileColors = Readonly<{
+  colors: {
+    border: string
+    background: string
+  }
+}>
+
+const Fibonacci = styled.span<TileColors>`
   margin: 0.3em 0;
   border: 2px solid ${(props) => props.colors?.border ?? 'black'};
   border-radius: 4px;

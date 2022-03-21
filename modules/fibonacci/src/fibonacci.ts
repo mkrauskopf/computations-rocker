@@ -1,9 +1,9 @@
-function naive(n) {
+function naive(n: number): number {
   checkInput(n)
   return n < 2 ? n : naive(n - 1) + naive(n - 2)
 }
 
-function checkInput(n) {
+function checkInput(n: number): void {
   if (n == null) {
     throw new Error(`'n' is not defined: ${n}`)
   }
