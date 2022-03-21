@@ -1,6 +1,7 @@
 {
   "scripts": {
     "build": "./dev-tools/ui-build",
+    "start": "npm run server",
     "server": "npm run -C server start"
   }
 }
