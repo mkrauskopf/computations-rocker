@@ -6,17 +6,17 @@
     "start": "nodemon ."
   },
   "dependencies": {
-    "express": "4.17.3"
+    "express": "4.18.1"
   },
   "devDependencies": {
     "import-sort-style-module": "6.0.0",
-    "nodemon": "2.0.15",
-    "prettier": "2.6.0",
+    "nodemon": "2.0.16",
+    "prettier": "2.6.2",
     "prettier-package-json": "2.6.3",
     "prettier-plugin-import-sort": "0.0.7"
   },
   "engines": {
-    "npm": "8.3.1",
-    "node": "16.14.0"
+    "npm": "8.5.5",
+    "node": "16.15.0"
   }
 }
